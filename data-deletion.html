@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Удаление данных — Abie Business</title>
+<style>
+  :root{--bg:#ffffff;--fg:#1a1c1e;--muted:#5f6368;--line:#e0e2e6;--accent:#3b5bdb;--code:#f1f3f5}
+  @media (prefers-color-scheme:dark){:root{--bg:#131416;--fg:#e3e3e6;--muted:#a0a4a8;--line:#2c2f33;--accent:#8ea2ff;--code:#1e2124}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  main{max-width:760px;margin:0 auto;padding:40px 22px 80px}
+  h1{font-size:1.7rem;line-height:1.25;margin:0 0 .3em}
+  h2{font-size:1.2rem;margin:2.2em 0 .6em;padding-top:.4em;border-top:1px solid var(--line)}
+  h2:first-of-type{border-top:none}
+  .updated{color:var(--muted);font-size:.9rem;margin:0 0 1.6em}
+  a{color:var(--accent)}
+  code{background:var(--code);padding:.12em .4em;border-radius:5px;font-size:.9em}
+  .meta{border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:1.2em 0;font-size:.95rem}
+  .meta div{margin:.2em 0}
+  .back{display:inline-block;margin-bottom:1.4em;color:var(--muted);text-decoration:none;font-size:.9rem}
+  footer{margin-top:3em;padding-top:1.2em;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="./">← Abie Business</a>
+<h1>Удаление данных — «Abie Business»</h1>
+<p class="updated">Дата последнего обновления: 24 июля 2026 г.</p>
+
+<div class="meta">
+<div><strong>Название:</strong> Abie Business</div>
+<div><strong>Идентификатор в Google Play:</strong> <code>com.abie.business</code></div>
+<div><strong>Разработчик:</strong> частное лицо, независимый разработчик (бесплатное приложение, без рекламы и монетизации)</div>
+</div>
+
+<h2>Особенность приложения</h2>
+<p>«Abie Business» — корпоративный чат и CRM. У приложения <strong>нет собственного сервера</strong>: все данные хранятся на сервере организации, адрес которого пользователь указывает при входе. Учётные записи создаёт администратор организации, самостоятельная регистрация отсутствует. Поэтому способ удаления зависит от того, где данные находятся.</p>
+
+<h2>Удаление содержимого (переписка, вложения, профиль, рабочие показатели)</h2>
+<p>Эти данные хранятся на сервере вашей организации, и разработчик приложения доступа к ним не имеет. Запрос на удаление подаётся:</p>
+<ol>
+<li><strong>Через администратора вашей организации</strong> — он деактивирует учётную запись и инициирует удаление данных на сервере.</li>
+<li><strong>Напрямую оператору сервера</strong> (вашей организации) по её контактам.</li>
+</ol>
+<p>Что при этом обычно сохраняется:</p>
+<ul>
+<li><strong>Сообщения в групповых чатах</strong> остаются в истории у других участников — удаление копии из чужой переписки невозможно без её искажения.</li>
+<li><strong>Данные табеля и рабочих показателей</strong> сохраняются в объёме и на срок, требуемые организации для кадрового и бухгалтерского учёта.</li>
+</ul>
+<p>Порядок и сроки удаления на сервере определяет организация как оператор данных.</p>
+
+<h2>Удаление данных на стороне разработчика (Firebase)</h2>
+<p>Единственные данные, проходящие через инфраструктуру разработчика, — служебные данные Firebase:</p>
+<ul>
+<li><strong>FCM-токен устройства</strong> — удаляется автоматически при выходе из аккаунта или удалении приложения с устройства.</li>
+<li><strong>Обезличенные отчёты о сбоях</strong> (Firebase Crashlytics) — не привязаны к учётной записи и автоматически удаляются в срок до 90 дней.</li>
+</ul>
+<p>Дополнительный запрос по этим данным можно направить разработчику письмом на <a href="mailto:alexandertsar48@gmail.com">alexandertsar48@gmail.com</a> с темой «Удаление данных».</p>
+
+<footer>Abie Business · удаление данных</footer>
+</main>
+</body>
+</html>
